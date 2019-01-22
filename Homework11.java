@@ -7,20 +7,37 @@ public class Homework11 {
 	 * ArrayList of int values
 	 */
 	public Homework11() {
-
+		ArrayList<Integer> myArray = new ArrayList<Integer>();
 	}
-
+	return myArray;
 	/* Return the stored ArrayList
 	 */
-	public ArrayList<Integer> getList() {
+	public ArrayList<Integer> getList() {}
+		public static ArrayList<Integer> n (int zint) {
+	    ArrayList<Integer> n = new ArrayList<Integer>();
+	    n.add(0);
+	    n.add(1);
+	    while (n.get(n.size() - 1) < zint) {
+	      int x = n.get(n.size() - 1);
+	      int y = n.get(n.size() - 2);
+	      n.add(x + y);
+	    }
+	    n.remove(n.size() - 1);
+	    return n;
+	  }
 
-	}
 
 	/* Fill the stored array list with integers, starting
 	 * at n and up to, but not including, m. The size of
 	 * the resultant ArrayList should be n - m.
 	 */
-	public void problem1(int n, int m) {
+	public void problem1(int n, int m) {}
+		public static boolean isPrime(ArrayList<Integer> aList, int number) {
+	    for (int i : aList) {
+	      if (number % n == 0) {
+	        return false;
+	      }
+	    }
 
 	}
 
