@@ -50,6 +50,25 @@ public class Homework11 {
 
 	}
 
+public void Homework11A(int c) {
+	c = constructor;
+	for (int i : blist) {
+		if (n % i == 0) {
+		}
+	}
+	
+}
+
+public int problem4() {
+	ArrayList<Integer> list = new ArrayList<Integer>();
+	for(int i = 0; i < num; i++){
+		int x = (int)((Math.random()) * (maxVal+1));
+		list.add(x);
+	}
+	return list;
+
+}
+
 	/* Problem 3:
 	 * Write the class Homework11A that extends this
 	 * class. Ensure that you create the constructor
