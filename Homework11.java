@@ -6,40 +6,34 @@ public class Homework11 {
 	 * variables. The constructor should create and save an
 	 * ArrayList of int values
 	 */
-	public Homework11() {
-		ArrayList<Integer> myArray = new ArrayList<Integer>();
-	}
-	return myArray;
+	 ArrayList <Integer> arrayList;
+	 public Homework11() {
+			arrayList = new ArrayList<Integer>();
+		}
+
+
+
+
 	/* Return the stored ArrayList
 	 */
-	public ArrayList<Integer> getList() {}
-		public static ArrayList<Integer> n (int zint) {
-	    ArrayList<Integer> n = new ArrayList<Integer>();
-	    n.add(0);
-	    n.add(1);
-	    while (n.get(n.size() - 1) < zint) {
-	      int x = n.get(n.size() - 1);
-	      int y = n.get(n.size() - 2);
-	      n.add(x + y);
-	    }
-	    n.remove(n.size() - 1);
-	    return n;
-	  }
+	public ArrayList<Integer> getList() {
+		return arrayList;
+	}
+
 
 
 	/* Fill the stored array list with integers, starting
 	 * at n and up to, but not including, m. The size of
 	 * the resultant ArrayList should be n - m.
 	 */
-	public void problem1(int n, int m) {}
-		public static boolean isPrime(ArrayList<Integer> aList, int number) {
-	    for (int i : aList) {
-	      if (number % n == 0) {
-	        return false;
-	      }
-	    }
-
+	public void problem1(int n, int m) {
+		for(int i = n; i < m; i++) {
+			arrayList.add(i);
+		}
 	}
+
+
+
 
 	/* Remove from the stored array list all numbers that
 	 * are evenly divisible by n. Remember that when you
@@ -47,27 +41,12 @@ public class Homework11 {
 	 * the right shift their indices down one.
 	 */
 	public void problem2(int n) {
+		for(int i = 0; i < arrayList.size() ; i++) {
 
-	}
-
-public void Homework11A(int c) {
-	c = constructor;
-	for (int i : blist) {
-		if (n % i == 0) {
 		}
 	}
-	
-}
 
-public int problem4() {
-	ArrayList<Integer> list = new ArrayList<Integer>();
-	for(int i = 0; i < num; i++){
-		int x = (int)((Math.random()) * (maxVal+1));
-		list.add(x);
-	}
-	return list;
 
-}
 
 	/* Problem 3:
 	 * Write the class Homework11A that extends this
