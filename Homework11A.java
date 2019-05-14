@@ -1,19 +1,35 @@
 import java.util.ArrayList;
 
-public void Homework11A(int c) {
-	c = constructor;
-	for (int i : blist) {
-		if (n % i == 0) {
-		}
+public class Homework11A extends Homework11 {
+
+
+	ArrayList <Integer> arrayList1;
+	public Homework11A() {
+		super();
+		arrayList1 = arrayList;
 	}
 
 
   public int problem4() {
-  	ArrayList<Integer> list = new ArrayList<Integer>();
-  	for(int i = 0; i < num; i++){
-  		int x = (int)((Math.random()) * (maxVal+1));
-  		list.add(x);
-  	}
-  	return list;
-
+		int s = 0;
+  	for (int x : arrayList1) {
+			s += x;
+		}
+		return s;
   }
+
+	@Override
+	public void problem2(int n) {
+		int x = 0;
+		int a = arrayList1.size();
+
+		for(int i = 0; i < a; i++) {
+			if(n % arrayList1.get(x) != 0) {
+				arrayList1.remove(x);
+			} else {
+				x++;
+			}
+		}
+	}
+
+}

@@ -7,8 +7,10 @@ public class Homework11 {
 	 * ArrayList of int values
 	 */
 	 ArrayList <Integer> arrayList;
+
 	 public Homework11() {
 			arrayList = new ArrayList<Integer>();
+
 		}
 
 
@@ -41,12 +43,17 @@ public class Homework11 {
 	 * the right shift their indices down one.
 	 */
 	public void problem2(int n) {
-		for(int i = 0; i < arrayList.size() ; i++) {
+		int x = 0;
+		int a = arrayList.size();
 
+		for(int i = 0; i < a; i++) {
+			if(arrayList.get(x) % n == 0) {
+				arrayList.remove(x);
+			} else {
+				x++;
+			}
 		}
 	}
-
-
 
 	/* Problem 3:
 	 * Write the class Homework11A that extends this
